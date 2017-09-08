@@ -67,7 +67,7 @@ h3.side-nav-link {cursor: pointer; font-size: 1rem;}
 
 /* ABOUT */
 canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
-.about-container {position: relative; height: 100vh;}
+.about-container {position: relative; height: 100vh; display: flex; flex-flow: column wrap; justify-content: space-around;}
 .about-box {display: block; position: relative; left: 50%; width: 30%; min-height: 240px; background-color: #848484; box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); transition: all 0.3s;}
 .about-box:hover {transform: scale(1.02,1.02) translateY(-2%); box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); transition: all 0.3s;}
 .about-box p {margin: 4%;}
