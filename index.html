@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>michael valier edwards - front-end web developer</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./img/favicon/manifest.json">
+  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="slick/slick.css" / type="text/css">
+  <link rel="stylesheet" href="./css/shift.css" type="text/css">
+  <link rel="stylesheet" href="./css/styles.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Forum" rel="stylesheet">
+</head>
+
+<body>
+  <!-- SIDE NAVIGATION -->
+  <div class="side-nav">
+    <div class="KW_progressContainer">
+      <div class="KW_progressBar"></div>
+    </div>
+    <a href="#top">
+      <div class="side-nav-arrow">&#8608
+        <h3 class="side-nav-link side-nav-hidden">TOP</h3>
+      </div>
+    </a>
+    <a href="#about">
+      <div class="side-nav-hidden side-nav-arrow">&#8608
+        <h3 class="side-nav-link side-nav-hidden">ABOUT</h3>
+      </div>
+    </a>
+    <a href="#demo">
+      <div class="side-nav-hidden side-nav-arrow">&#8608
+        <h3 class="side-nav-link side-nav-hidden">DEMO</h3>
+      </div>
+    </a>
+    <a href="#links">
+      <div class="side-nav-hidden side-nav-arrow">&#8608
+        <h3 class="side-nav-link side-nav-hidden">LINKS</h3>
+      </div>
+    </a>
+  </div>
+  <!-- LANDING -->
+  <div class="landing" id="top">
+    <div class="name-container fade-in">
+      <h1 id="name-title">michael VALIER edwards</h1>
+    </div>
+    <div class="job-title-container flip-in-hor-bottom">
+      <h3>front-end web developer</h3>
+    </div>
+    <img class="silhouette" id="silhouette1" src="./img/silhouette_fill1.svg" alt="">
+    <img class="silhouette" id="silhouette2" src="./img/silhouette_fill1.svg" alt="">
+    <img class="silhouette" id="silhouette3" src="./img/silhouette_fill1.svg" alt="">
+  </div>
+  <!-- ABOUT -->
+  <div class="about-container" id="about">
+    <img id="cartoon-me" src="./img/mve_head.svg" alt="">
+    <div class="about-box" id="computer-skills">
+      <h3>DEVELOPER</h3>
+      <p>From the start I have been obsessed. I love the powerful combination of visual aesthetic and functional logic the front-end languages provide.</p>
+    </div>
+    <div class="about-box" id="music-skills">
+      <h3>SOUND MANIPULATOR</h3>
+      <p>For as long as I can remember, I have been fascinated with sound. Over the years I've developed skills in audio engineering and performing on instruments in the guitar, percussion, keys, and brass families.</p>
+    </div>
+    <div class="about-box" id="manual-skills">
+      <h3>TINKERER</h3>
+      <p>So far I've managed to keep all of my fingers. I have taken classes in woodworking, and have dabbled in electronics.</p>
+    </div>
+  </div>
+  <!-- DEMO -->
+  <div class="demo-container" id="demo">
+    <div id="overlay"></div>
+    <div class="demo-box">
+      <h3>STOPWATCH</h3>
+      <iframe width="100%" height="90%" src="https://jsfiddle.net/burnthair/25k3zh6j/93/embedded/result/?bodyColor=fff&menuColor=848484&accentColor=222&fontColor=222" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+    </div>
+    <div class="demo-box">
+      <h3>BURGER</h3>
+      <div class="burger-box">
+        <figure id="shift-container">
+          <img id="burger-bun-top" class="shift-element" data-animation="shift_enterDownward" data-delay="2.33" data-duration="1" src="./img/burger_bun_top.png">
+          <img id="burger-tomato-2" class="shift-element" data-animation="shift_enterDownward" data-delay="2" data-duration="1" src="./img/burger_tomato_2.png">
+          <img id="burger-tomato-1" class="shift-element" data-animation="shift_enterDownward" data-delay="1.67" data-duration="1" src="./img/burger_tomato_1.png">
+          <img id="burger-lettuce-2" class="shift-element" data-animation="shift_enterDownward" data-delay="1.33" data-duration="1" src="./img/burger_lettuce_2.png">
+          <img id="burger-lettuce-1" class="shift-element" data-animation="shift_enterDownward" data-delay="1" data-duration="1" src="./img/burger_lettuce_1.png">
+          <img id="burger-mustard" class="shift-element" data-animation="shift_enterDownward" data-delay="0.67" data-duration="1" src="./img/burger_mustard.png">
+          <img id="burger-patty" class="shift-element" data-animation="shift_enterDownward" data-delay="0.33" data-duration="1" src="./img/burger_patty.png">
+          <img id="burger-bun-bottom" class="shift-element" data-animation="shift_enterDownward" data-delay="0" data-duration="1" src="./img/burger_bun_bottom.png">
+          <img id="burger-shadow" class="shift-element" data-animation="shift_shadow" data-delay="0" data-duration="3.33" src="./img/burger_shadow.png">
+          <button id="burger-button" type="button">MAKE A DELICIOUS BURGER</button>
+        </figure>
+      </div>
+    </div>
+    <div class="demo-box">
+      <h3>SIGNS</h3>
+      <div class="carousel-container">
+        <figure class="carousel">
+          <img class="carousel-image" src="./img/jampickle.png" alt="">
+          <img class="carousel-image" src="./img/mixnmatch.png" alt="">
+          <img class="carousel-image" src="./img/takebackgarden.png" alt="">
+          <img class="carousel-image" src="./img/clothes.png" alt="">
+        </figure>
+      </div>
+    </div>
+  </div>
+  <!-- LINKS -->
+  <div class="link-container" id="links">
+    <!-- <img class="parallax-layer" src="./img/mountainsprite1.png" alt="" style="width:978px; height:325px;"/>
+    <img class="parallax-layer" src="./img/mountainsprite2.png" alt="" style="width:987px; height:328px;"/>
+    <img class="parallax-layer" src="./img/mountainsprite3.png" alt="" style="width:1001px; height:333px;"/>
+    <img class="parallax-layer" src="./img/mountainsprite4.png" alt="" style="width:1031px; height:343px;"/>
+    <img class="parallax-layer" src="./img/mountainsprite5.png" alt="" style="width:1067px; height:355px;"/>
+    <img class="parallax-layer" src="./img/mountainsprite6.png" alt="" style="width:1120px; height:373px;"/>
+    <img class="parallax-layer" src="./img/mountainsprite7.png" alt="" style="width:1200px; height:400px;"/> -->
+    <a class="link-logo" href="https://github.com/burnthair" target="_blank"><img src="./img/githublogo.png" alt=""></a>
+    <a class="link-logo" href="https://soundcloud.com/mvedwards" target="_blank"><img src="./img/soundcloudlogo.png" alt=""></a>
+    <a class="link-logo" href="https://www.linkedin.com/in/michaelvedwards/" target="_blank"><img src="./img/linkedinlogo.png" alt=""></a>
+  </div>
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="https://use.edgefonts.net/quicksand.js"></script>
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/jQuery.lettering.js"></script>
+  <script type="text/javascript" src="js/shift.js"></script>
+  <script type="text/javascript" src="node_modules/matter-js/build/matter.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
