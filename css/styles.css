@@ -17,6 +17,8 @@
 
   images aren't loading on first load, need a promise?
 
+  user can draw and submit an image
+
 
 remove column wrap from about section
 wrap all sections in one div
@@ -74,36 +76,86 @@ a {text-decoration: none;}
 :focus {outline: none;}
 
 /* GLOBAL */
-h1, h2 {font-family: 'Forum', serif;}
-h3, p, button {font-family: quicksand, sans-serif; font-weight: 100; color: #fff;}
-h3 {letter-spacing: 0.6vw; font-size: 0.7vw;}
+h1, h2 {font-family: 'Londrina Solid', serif; text-align: center;}
+h3, li, p, button {font-family: quicksand, sans-serif; font-weight: 100; color: #fff;}
+h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
 h1:hover, h3:hover, p:hover {cursor: default;}
 button:hover {cursor: pointer;}
+.container {background-color: #73819A; max-width: 100%; overflow-x: hidden;}
 
 /* NAV */
-.initials {position: fixed; background-color: #73819A; -webkit-filter: drop-shadow(0.4vh 0.4vh 0 rgba(34,34,34,0.6)); filter: drop-shadow(0.4vh 0.4vh 0 rgba(34,34,34,0.6)); border-radius: 100%; width: 8vh; height: 8vh; top: 10px; left: 10px; z-index: 9999; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
-.initials h2 {color: white;}
-.side-nav {position: fixed; left: 0; top: 0; height: 100vh; width: 2vw; z-index: 9990; background-color: #848484; overflow: hidden; -webkit-box-shadow: 0.1vw 0 0.4vw #222; box-shadow: 0.1vw 0 0.4vw #222; -webkit-transition: all 0.4s; transition: all 0.4s;}
-.side-nav-arrow {position: relative; top: 10vh; left: 10%; margin-top: 20px; color: white; -webkit-transition: all 0.4s; transition: all 0.4s;}
-.side-nav-arrow:hover {-webkit-transform: translateY(-0.4vh);transform: translateY(-0.4vh); -webkit-filter: drop-shadow(0 0.4vh 0 rgba(34,34,34,0.6)); filter: drop-shadow(0 0.4vh 0 rgba(34,34,34,0.6)); -webkit-transition: all 0.4s; transition: all 0.4s;}
-.side-nav-hidden {display: none;}
-h3.side-nav-link {cursor: pointer; font-size: 1rem;}
-.side-nav:hover {width: 10%; -webkit-transition: all 0.4s; transition: all 0.4s;}
+.side-nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 2vw;
+  z-index: 9990;
+  background-color: #848484;
+  overflow: hidden;
+  -webkit-box-shadow: 0.1vw 0 0.4vw #222;
+  box-shadow: 0.1vw 0 0.4vw #222;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.side-nav-active {
+  width: 10vw;
+}
+
+.nav-arrow {
+  position: relative;
+  left: 12px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.nav-arrow-active {
+  left: 80%;
+  -webkit-transform: rotate(540deg);
+  transform: rotate(540deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.side-nav-link {
+  padding: 6px;
+  opacity: 0;
+  cursor: pointer;
+  font-size: 1rem;
+  position: relative;
+  top: 20px;
+  left: -80px;
+  margin-top: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.side-nav-link-active {
+  opacity: 1;
+  left: 10%;
+}
+
+.side-nav-link:hover {
+  background-color: #73819A;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.side-nav-link:active {
+  color: #73819A;
+}
 
 /* LANDING */
 .landing {width: 100vw; height: 100vh; max-width: 100%; z-index: 100; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; background-color: #fff}
-.name-container {width: -webkit-min-content;width: -moz-min-content;width: min-content; text-align: left; margin: 0 auto; z-index: 10; border-bottom: 0.5vw solid #222; padding-bottom: 1%; color: #222; mix-blend-mode: difference;}
-.name-container h1 {font-size: 7vw; line-height: 0.75;}
-.char1, .char2, .char3, .char4, .char5, .char6 {margin-right: 1.05%;}
-.char9, .char10, .char11, .char12, .char13 {margin-right: 2.7%;}
-.char22 {display: inline-block; -webkit-transform: rotate(20deg);}
+.name-container {width: -webkit-min-content; width: -moz-min-content; width: min-content; margin: 0 auto; z-index: 10; padding-bottom: 1%; color: #222; mix-blend-mode: difference;}
+.name-container h1 {font-size: 8rem; line-height: 0.725;}
 .job-title-container {position: relative; z-index: 10;}
 .job-title-container h3 {margin-top: 4%; color: #222;}
 .silhouette {position: absolute; -webkit-transform: translate(-49%, -49%); transform: translate(-49%, -49%); width: 28%; display: none;}
 #silhouette1 {top: 50%; left: 50%; z-index: 6;}
 #silhouette2 {top: 51%; left: 51%; z-index: 4; mix-blend-mode: difference;}
 #silhouette3 {top: 49%; left: 49%; z-index: 2; mix-blend-mode: difference;}
-/*.char15, .char16, .char17, .char18, .char19, .char20, .char21 {margin-right: 0.3%;}*/
 
 /* ABOUT */
 canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
@@ -189,7 +241,7 @@ a.link-logo img:hover {mix-blend-mode: difference; -webkit-transform: translateY
 	.demo-box {width: 100%;}
 
 	.silhouette {width: 70%; top: 56%;}
-	#cartoon-me {width: auto;}
+	#cartoon-me {display: none;}
 }
 
 

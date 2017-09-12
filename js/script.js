@@ -1,6 +1,4 @@
 $(document).ready(function() {
-  // Apply lettering() to the name title
-  $("#name-title").lettering();
   // Full opacity for silhouette
   $("#silhouette1").fadeIn(1414);
   $("#silhouette2").fadeIn(555);
@@ -17,9 +15,13 @@ $(document).ready(function() {
   });
   // Functionality to fade in and out text on the side navigation bar
   $(".side-nav").hover(function() {
-      $(".side-nav-hidden").fadeIn(400, false);
+      $(".side-nav").addClass('side-nav-active');
+      $(".nav-arrow").addClass('nav-arrow-active');
+      $(".side-nav-link").addClass('side-nav-link-active');
     }, function() {
-      $(".side-nav-hidden").fadeOut(400, false);
+      $(".side-nav").removeClass('side-nav-active');
+      $(".nav-arrow").removeClass('nav-arrow-active');
+      $(".side-nav-link").removeClass('side-nav-link-active');
     }
   );
   // Functionality to "light focus" the hovered demo box
