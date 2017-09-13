@@ -30,7 +30,24 @@ $(document).ready(function() {
     $(this).children('p').slideDown();
     $(this).children('.about-arrow').css({"transform": "rotate(510deg)", "-webkit-transform": "rotate(510deg)"});
   });
-
+  $("#stopwatch-show").click(function() {
+    $(".demo-show").removeClass("demo-button-current");
+    $(".demo-box").removeClass("demo-box-current");
+    $(this).addClass("demo-button-current");
+    $("#stopwatch-demo-box").addClass("demo-box-current");
+  });
+  $("#burger-show").click(function() {
+    $(".demo-show").removeClass("demo-button-current");
+    $(".demo-box").removeClass("demo-box-current");
+    $(this).addClass("demo-button-current");
+    $("#burger-demo-box").addClass("demo-box-current");
+  });
+  $("#signs-show").click(function() {
+    $(".demo-show").removeClass("demo-button-current");
+    $(".demo-box").removeClass("demo-box-current");
+    $(this).addClass("demo-button-current");
+    $("#signs-demo-box").addClass("demo-box-current");    
+  });
   // Functionality to "light focus" the hovered demo box
   // $(".demo-box").hover(function() {
   //   $(".demo-box").css("z-index", "10")

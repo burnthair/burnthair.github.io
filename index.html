@@ -61,11 +61,16 @@
     </div>
     <!-- DEMO -->
     <div class="demo-container" id="demo">
-      <div class="demo-box">
-        <h3>STOPWATCH</h3>
-        <iframe width="100%" height="90%" src="https://jsfiddle.net/burnthair/25k3zh6j/93/embedded/result/?bodyColor=fff&menuColor=848484&accentColor=222&fontColor=222" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      <div class="demo-buttons">
+        <button class="demo-show demo-button-current" id="stopwatch-show">STOPWATCH</button>
+        <button class="demo-show" id="burger-show">BURGER</button>
+        <button class="demo-show" id="signs-show">SIGNS</button>
       </div>
-      <div class="demo-box">
+      <div id="stopwatch-demo-box" class="demo-box demo-box-current">
+        <h3>STOPWATCH</h3>
+        <iframe width="100%" height="90%" src="https://jsfiddle.net/burnthair/25k3zh6j/94/embedded/result/?bodyColor=fff&menuColor=848484&accentColor=222&fontColor=222" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+      </div>
+      <div id="burger-demo-box" class="demo-box">
         <h3>BURGER</h3>
         <div class="burger-box">
           <figure id="shift-container">
@@ -82,7 +87,7 @@
           </figure>
         </div>
       </div>
-      <div class="demo-box">
+      <div id="signs-demo-box" class="demo-box">
         <h3>SIGNS</h3>
         <div class="carousel-container">
           <figure class="carousel">
