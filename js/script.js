@@ -24,6 +24,13 @@ $(document).ready(function() {
       $(".side-nav-link").removeClass('side-nav-link-active');
     }
   );
+  $(".about-box").on('touchstart', function() {
+    $(".about-box").children('p').slideUp();
+    $(this).children('p').slideDown();
+  });
+  $(".about-container").focusout(function() {
+    $(".about-box").children('p').slideUp();
+  });
   // Functionality to "light focus" the hovered demo box
   $(".demo-box").hover(function() {
     $(".demo-box").css("z-index", "10")

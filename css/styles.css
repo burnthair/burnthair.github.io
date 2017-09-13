@@ -163,7 +163,9 @@ canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 .about-container {position: relative; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; -ms-flex-pack: distribute; justify-content: space-around;}
 .about-box {display: block; position: relative; left: 50%; width: 30%; min-height: 240px; background-color: #848484; -webkit-box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
 .about-box:hover {-webkit-transform: scale(1.02,1.02) translateY(-2%);transform: scale(1.02,1.02) translateY(-2%); -webkit-box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
-.about-box p {margin: 4%;}
+.about-box h3 {margin: 6px;}
+.about-box p {display: block; margin: 4%;}
+.about-arrow {display: none; position: absolute; left: 92%; top: 6px; -webkit-transform: rotate(90deg); transform: rotate(90deg);}
 #cartoon-me {position: fixed; top: -24%; left: 0; z-index: -1; width: 100vw;}
 
 /* DEMO */
@@ -274,17 +276,20 @@ a.link-logo img:hover {mix-blend-mode: difference; -webkit-transform: translateY
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
   }
-
   .nav-arrow-active {
     left: 10px;
     top: 42px;
     -webkit-transform: rotate(510deg);
     transform: rotate(510deg);
   }
-
-	.about-box {width: 90%; left: 5%; min-height: 0; height: 160px;}
+  .about-container {height: 100vh;justify-content: center;}
+	.about-box {width: 90%; left: 5%; min-height: 0px;}
 	.about-box h3 {font-size: 0.8rem; letter-spacing: 0.4rem;}
-	.about-box p {font-size: 1rem;}
+	.about-box p {font-size: 1rem; display: none;}
+  .about-box:hover {-webkit-transform: scale(1,1) translateY(0);transform: scale(1,1) translateY(0); -webkit-box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4);}
+  .about-arrow {display: inline;}
+
+
 	.demo-container {height: auto; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap;}
 	.demo-box {width: 90%;}
 	.silhouette {width: 70%; top: 56%;}
