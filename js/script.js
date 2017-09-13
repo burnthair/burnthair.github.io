@@ -46,7 +46,7 @@ $(document).ready(function() {
     $(".demo-show").removeClass("demo-button-current");
     $(".demo-box").removeClass("demo-box-current");
     $(this).addClass("demo-button-current");
-    $("#signs-demo-box").addClass("demo-box-current");    
+    $("#signs-demo-box").addClass("demo-box-current");
   });
   // Functionality to "light focus" the hovered demo box
   // $(".demo-box").hover(function() {

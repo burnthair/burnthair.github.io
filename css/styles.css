@@ -6,12 +6,8 @@
 
   the burger can be replayed
 
-  the nav arrows fade in properly or are replaced by images
-
   the "mountains" are split into separate images that slide in with the front of the view appearing first.
   mouse position creates a subtle parallax on those mountains
-
-  figure out the issue with the deactivation of the "focus light" on the demo boxes
 
   add a screen loader
 
@@ -19,20 +15,8 @@
 
   user can draw and submit an image
 
-
-remove column wrap from about section
-wrap all sections in one div
-fix min-content
 owl carousel:
-remove overlay on mobile;
 
-.class:before {
-    content: '\E315';
-    font-family: 'Material Icons';
-    display: block;
-    font-size: 2rem;
-    color: aliceblue;
-}
 
 site seems to overflow vertically? Put a container over everything and give a max width. overflow-x: none on the body (flex-flow: column wrap take out)
 Titles on boxes are super small and hard to read.
@@ -41,17 +25,9 @@ Rethink icons arrows
 
     Mobile:
 Remove the head on mobile where the demos are
-On mobile the arrows should point down not to the right since the dropdown is going right.
-Title isn’t centered over the head
-Navigation isn’t expanding to the full height of content
 Hamburger is overlapping the button
-No way to close the navigation on mobile since hovers don’t work like on desktop
-Disable about us scroll feature on mobile
 The part that says “click the crown to start the timer” should be centered at the top on mobile and then show on hover for desktop
 Slider buttons don’t work on mobile (iphone - chrome, works on Safari) (maybe use owl carousel instead?)
-Possible overlay bug interfering with events on mobile
-
-
 
 */
 
@@ -79,7 +55,6 @@ a {text-decoration: none;}
 h1, h2 {font-family: 'Londrina Solid', serif; text-align: center;}
 h3, li, p, button {font-family: quicksand, sans-serif; font-weight: 100; color: #fff;}
 h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
-
 .container {background-color: #73819A; max-width: 100%; overflow-x: hidden;}
 
 /* NAV */
@@ -97,18 +72,15 @@ h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
-
 .side-nav-active {
   width: 10vw;
 }
-
 .nav-arrow {
   position: relative;
   left: 12px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .nav-arrow-active {
   left: 80%;
   -webkit-transform: rotate(540deg);
@@ -116,7 +88,6 @@ h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .side-nav-link {
   display: block;
   padding: 6px;
@@ -130,14 +101,10 @@ h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
-
 .side-nav-link-active {
   opacity: 1;
   left: 10%;
 }
-
-
-
 .side-nav-link:active {
   color: #73819A;
 }
@@ -155,9 +122,8 @@ h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
 
 /* ABOUT */
 canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
-.about-container {position: relative; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; -ms-flex-pack: distribute; justify-content: space-around;}
+.about-container {position: relative; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around;}
 .about-box {display: block; position: relative; z-index: 20; left: 50%; width: 30%; min-height: 240px; background-color: #848484; -webkit-box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
-
 .about-box h3 {margin: 6px;}
 .about-box p {display: block; margin: 4%;}
 .about-arrow {display: none; position: absolute; left: 92%; top: 6px; -webkit-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: all 0.5s; transition: all 0.5s;}
@@ -186,12 +152,10 @@ canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 #burger-bun-top    {z-index: 80;}
 #burger-button {position: absolute; width: 90%; bottom: 5%; border: none; font-size: 0.75rem; margin: 0; padding: 4%; color: white; background-color: #73819A; right: 5%; -webkit-transition: all 0.2s; transition: all 0.2s;}
 
-
 /* LINKS */
 .link-container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; background-image: url("../img/mountains2.svg"); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh;}
 a.link-logo {width: 12%; -webkit-filter: drop-shadow(0 0 0 0); filter: drop-shadow(0 0 0 0);}
 a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s;}
-
 
 .KW_progressContainer {
   left:0;
@@ -284,7 +248,7 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
   .about-arrow {display: inline;}
 
 
-	.demo-container {height: 100vh; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; justify-content: flex-start;;}
+	.demo-container {-webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; justify-content: flex-start;}
   .demo-buttons {display: block; margin-top: 18%; text-align: center;}
   .demo-buttons button {background-color: #848484; border: none; padding: 6px; margin: 10% 12px;}
   .demo-buttons button:active {}
@@ -292,6 +256,8 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
   div.demo-box.demo-box-current {display: block;}
 	.demo-box {width: 90%; display: none;}
   .demo-box h3 {display: none;}
+  .link-container {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+  a.link-logo {margin-top: 40px;}
 	.silhouette {width: 70%; top: 56%;}
 	#cartoon-me {display: none;}
 }
