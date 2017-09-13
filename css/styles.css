@@ -271,13 +271,15 @@ a.link-logo img:hover {mix-blend-mode: difference; -webkit-transform: translateY
   .nav-arrow {
     left: 10px;
     top: 10px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
   }
 
   .nav-arrow-active {
     left: 10px;
     top: 42px;
-    -webkit-transform: rotate(540deg);
-    transform: rotate(540deg);
+    -webkit-transform: rotate(510deg);
+    transform: rotate(510deg);
   }
 
 	.about-box {width: 90%; left: 5%; min-height: 0; height: 160px;}
