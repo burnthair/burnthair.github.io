@@ -62,11 +62,12 @@ $(document).ready(function() {
     burgerPlayCount++
     if (burgerPlayCount > 1) {
       $(".shift-element").attr("data-animation","shift_exitLeft");
-    } else {
-      setTimeout(function() {
-        $("#burger-button").text("MAKE ANOTHER");
-      }, 3300);
     }
+    //  else {
+    //   setTimeout(function() {
+    //     $("#burger-button").text("MAKE ANOTHER");
+    //   }, 3300);
+    // }
   });
   // Set the element with class of "carousel" to a slick.js carousel with autoplay
   $(".owl-carousel").owlCarousel({
