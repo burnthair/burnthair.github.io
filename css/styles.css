@@ -54,7 +54,7 @@ a {text-decoration: none;}
 /* GLOBAL */
 h1, h2 {font-family: 'Londrina Solid', serif; text-align: center;}
 h3, li, p, button {font-family: quicksand, sans-serif; font-weight: 100; color: #fff;}
-h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
+h3 {margin: 6px; letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
 .container {background-color: #73819A; max-width: 100%; overflow-x: hidden;}
 
 /* NAV */
@@ -124,7 +124,6 @@ h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
 canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 .about-container {position: relative; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: distribute; justify-content: space-around;}
 .about-box {display: block; position: relative; z-index: 20; left: 50%; width: 30%; min-height: 240px; background-color: #848484; -webkit-box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
-.about-box h3 {margin: 6px;}
 .about-box p {display: block; margin: 4%;}
 .about-arrow {display: none; position: absolute; left: 92%; top: 6px; -webkit-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: all 0.5s; transition: all 0.5s;}
 #cartoon-me {position: fixed; top: -24%; left: 0; z-index: -1; width: 100vw;}
