@@ -79,8 +79,7 @@ a {text-decoration: none;}
 h1, h2 {font-family: 'Londrina Solid', serif; text-align: center;}
 h3, li, p, button {font-family: quicksand, sans-serif; font-weight: 100; color: #fff;}
 h3 {letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-block;}
-h1:hover, h3:hover, p:hover {cursor: default;}
-button:hover {cursor: pointer;}
+
 .container {background-color: #73819A; max-width: 100%; overflow-x: hidden;}
 
 /* NAV */
@@ -137,11 +136,7 @@ button:hover {cursor: pointer;}
   left: 10%;
 }
 
-.side-nav-link:hover {
-  background-color: #73819A;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
+
 
 .side-nav-link:active {
   color: #73819A;
@@ -161,8 +156,8 @@ button:hover {cursor: pointer;}
 /* ABOUT */
 canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 .about-container {position: relative; height: 100vh; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column wrap; flex-flow: column wrap; -ms-flex-pack: distribute; justify-content: space-around;}
-.about-box {display: block; position: relative; left: 50%; width: 30%; min-height: 240px; background-color: #848484; -webkit-box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
-.about-box:hover {-webkit-transform: scale(1.02,1.02) translateY(-2%);transform: scale(1.02,1.02) translateY(-2%); -webkit-box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
+.about-box {display: block; position: relative; z-index: 20; left: 50%; width: 30%; min-height: 240px; background-color: #848484; -webkit-box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
+
 .about-box h3 {margin: 6px;}
 .about-box p {display: block; margin: 4%;}
 .about-arrow {display: none; position: absolute; left: 92%; top: 6px; -webkit-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: all 0.5s; transition: all 0.5s;}
@@ -177,9 +172,7 @@ canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 .carousel {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 86%; height: auto;}
 .carousel-image {}
 .slick-arrow {border: none; margin: 0 4%; font-size: 1.5rem; color: white; background-color: #73819A; -webkit-transition: all 0.2s; transition: all 0.2s;}
-.slick-arrow:hover, #burger-button:hover {-webkit-transform: translateY(-0.4vh);transform: translateY(-0.4vh); -webkit-box-shadow: 0.2vw 0.3vh 0.3vw rgba(34,34,34,0.4); box-shadow: 0.2vw 0.3vh 0.3vw rgba(34,34,34,0.4); -webkit-transition: all 0.2s; transition: all 0.2s;}
 .slick-arrow:active, #burger-button:active {-webkit-transform: translateY(0vh);transform: translateY(0vh); -webkit-box-shadow: 0vw 0vw 0vw #fff; box-shadow: 0vw 0vw 0vw #fff; -webkit-transition: all 0.2s; transition: all 0.2s;}
-#overlay {position: absolute; left: 0; top: 0; width: 100%; height: 100%; background-color: #222; opacity: 0; display: none; z-index: 20;}
 #shift-container {width: 80%; height: 100%; margin: 0 auto; -webkit-transition: all 2s ease; transition: all 2s ease;}
 #burger-shadow     {z-index:  5;}
 #burger-bun-bottom {z-index: 10;}
@@ -197,7 +190,7 @@ canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 .link-container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; background-image: url("../img/mountains2.svg"); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh;}
 a.link-logo {width: 12%; -webkit-filter: drop-shadow(0 0 0 0); filter: drop-shadow(0 0 0 0);}
 a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s;}
-a.link-logo img:hover {mix-blend-mode: difference; -webkit-transform: translateY(-1vh); transform: translateY(-1vh); -webkit-filter: drop-shadow(0 1vh 0 rgba(34,34,34,0.6)); filter: drop-shadow(0 1vh 0 rgba(34,34,34,0.6)); -webkit-transition: all 0.2s; transition: all 0.2s;}
+
 
 .KW_progressContainer {
   left:0;
@@ -225,7 +218,7 @@ a.link-logo img:hover {mix-blend-mode: difference; -webkit-transform: translateY
 }
 
 .parallax-viewport {
-  position: relative;     /* relative, absolute, fixed */
+  position: relative;
   overflow: hidden;
 }
 .parallax-layer {
@@ -294,6 +287,19 @@ a.link-logo img:hover {mix-blend-mode: difference; -webkit-transform: translateY
 	.demo-box {width: 90%;}
 	.silhouette {width: 70%; top: 56%;}
 	#cartoon-me {display: none;}
+}
+
+@media all and (min-width: 1200px) {
+  h1:hover, h3:hover, p:hover {cursor: default;}
+  button:hover {cursor: pointer;}
+  .side-nav-link:hover {
+    background-color: #73819A;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .about-box:hover {-webkit-transform: scale(1.02,1.02) translateY(-2%);transform: scale(1.02,1.02) translateY(-2%); -webkit-box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
+  .slick-arrow:hover, #burger-button:hover {-webkit-transform: translateY(-0.4vh);transform: translateY(-0.4vh); -webkit-box-shadow: 0.2vw 0.3vh 0.3vw rgba(34,34,34,0.4); box-shadow: 0.2vw 0.3vh 0.3vw rgba(34,34,34,0.4); -webkit-transition: all 0.2s; transition: all 0.2s;}
+  a.link-logo img:hover {mix-blend-mode: difference; -webkit-transform: translateY(-1vh); transform: translateY(-1vh); -webkit-filter: drop-shadow(0 1vh 0 rgba(34,34,34,0.6)); filter: drop-shadow(0 1vh 0 rgba(34,34,34,0.6)); -webkit-transition: all 0.2s; transition: all 0.2s;}
 }
 
 @media screen and (max-device-aspect-ratio: 4/3) {

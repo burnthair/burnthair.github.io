@@ -30,17 +30,15 @@ $(document).ready(function() {
     $(this).children('p').slideDown();
     $(this).children('.about-arrow').css({"transform": "rotate(510deg)", "-webkit-transform": "rotate(510deg)"});
   });
-  $(".about-container").focusout(function() {
-    $(".about-box").children('p').slideUp();
-  });
+
   // Functionality to "light focus" the hovered demo box
-  $(".demo-box").hover(function() {
-    $(".demo-box").css("z-index", "10")
-    $(this).css("z-index","1000")
-    $("#overlay").fadeTo(100, 0.1);
-  }, function() {
-    $("#overlay").fadeOut(100);
-  });
+  // $(".demo-box").hover(function() {
+  //   $(".demo-box").css("z-index", "10")
+  //   $(this).css("z-index","1000")
+  //   $("#overlay").fadeTo(100, 0.1);
+  // }, function() {
+  //   $("#overlay").fadeOut(100);
+  // });
   // Replay burger animation
   var burgerPlayCount = 0;
   $("#burger-button").click(function() {
