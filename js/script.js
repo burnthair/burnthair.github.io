@@ -26,7 +26,9 @@ $(document).ready(function() {
   );
   $(".about-box").on('touchstart', function() {
     $(".about-box").children('p').slideUp();
+    $(".about-box").children('.about-arrow').css({"transform": "rotate(90deg)", "-webkit-transform": "rotate(90deg)"});
     $(this).children('p').slideDown();
+    $(this).children('.about-arrow').css({"transform": "rotate(510deg)", "-webkit-transform": "rotate(510deg)"});
   });
   $(".about-container").focusout(function() {
     $(".about-box").children('p').slideUp();
