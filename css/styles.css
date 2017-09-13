@@ -136,7 +136,7 @@ canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 .burger-box {width: 100%; height: 90%; background-color: white; overflow: hidden;}
 .shift-element {top: 25%; width: 90%; height: auto; opacity: 0; -webkit-transition: all 1s; transition: all 1s;}
 .carousel-container {width: 100%; height: 90%; background-color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
-.carousel {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-direction: row; flex-direction: row; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 86%; height: auto;}
+.owl-carousel {align-items: center; width: 70%; height: auto;}
 .carousel-image {}
 .slick-arrow {border: none; margin: 0 4%; font-size: 1.5rem; color: white; background-color: #73819A; -webkit-transition: all 0.2s; transition: all 0.2s;}
 .slick-arrow:active, #burger-button:active, .demo-buttons button:active {-webkit-transform: translateY(0vh);transform: translateY(0vh); -webkit-box-shadow: 0vw 0vw 0vw #fff; box-shadow: 0vw 0vw 0vw #fff; -webkit-transition: all 0.2s; transition: all 0.2s;}
@@ -271,7 +271,7 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
     transition: all 0.3s;
   }
   .about-box:hover {-webkit-transform: scale(1.02,1.02) translateY(-2%);transform: scale(1.02,1.02) translateY(-2%); -webkit-box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); box-shadow: 0.1vw 0.2vw 0.26vw rgba(34,34,34,0.4), -0.05vw 0.1vw 0.26vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
-  .slick-arrow:hover, #burger-button:hover {-webkit-transform: translateY(-0.4vh);transform: translateY(-0.4vh); -webkit-box-shadow: 0.2vw 0.3vh 0.3vw rgba(34,34,34,0.4); box-shadow: 0.2vw 0.3vh 0.3vw rgba(34,34,34,0.4); -webkit-transition: all 0.2s; transition: all 0.2s;}
+  #burger-button:hover {-webkit-transform: translateY(-0.4vh);transform: translateY(-0.4vh); -webkit-box-shadow: 0.2vw 0.3vh 0.3vw rgba(34,34,34,0.4); box-shadow: 0.2vw 0.3vh 0.3vw rgba(34,34,34,0.4); -webkit-transition: all 0.2s; transition: all 0.2s;}
   a.link-logo img:hover {mix-blend-mode: difference; -webkit-transform: translateY(-1vh); transform: translateY(-1vh); -webkit-filter: drop-shadow(0 1vh 0 rgba(34,34,34,0.6)); filter: drop-shadow(0 1vh 0 rgba(34,34,34,0.6)); -webkit-transition: all 0.2s; transition: all 0.2s;}
 }
 

@@ -69,5 +69,11 @@ $(document).ready(function() {
     }
   });
   // Set the element with class of "carousel" to a slick.js carousel with autoplay
-  $(".carousel").slick({autoplay: true, autoplaySpeed: 4000});
+  $(".owl-carousel").owlCarousel({
+    margin: 2,
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 4000
+  });
 });
