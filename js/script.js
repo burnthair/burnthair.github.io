@@ -36,11 +36,11 @@ $(document).ready(function() {
     $(this).addClass("demo-button-current");
     $("#stopwatch-demo-box").addClass("demo-box-current");
   });
-  $("#burger-show").click(function() {
+  $("#hartland-show").click(function() {
     $(".demo-show").removeClass("demo-button-current");
     $(".demo-box").removeClass("demo-box-current");
     $(this).addClass("demo-button-current");
-    $("#burger-demo-box").addClass("demo-box-current");
+    $("#hartland-robotics").addClass("demo-box-current");
   });
   $("#signs-show").click(function() {
     $(".demo-show").removeClass("demo-button-current");
@@ -57,18 +57,18 @@ $(document).ready(function() {
   //   $("#overlay").fadeOut(100);
   // });
   // Replay burger animation
-  var burgerPlayCount = 0;
-  $("#burger-button").click(function() {
-    burgerPlayCount++
-    if (burgerPlayCount > 1) {
-      $(".shift-element").attr("data-animation","shift_exitLeft");
-    }
+  // var burgerPlayCount = 0;
+  // $("#burger-button").click(function() {
+  //   burgerPlayCount++
+  //   if (burgerPlayCount > 1) {
+  //     $(".shift-element").attr("data-animation","shift_exitLeft");
+  //   }
     //  else {
     //   setTimeout(function() {
     //     $("#burger-button").text("MAKE ANOTHER");
     //   }, 3300);
     // }
-  });
+  // });
   // Set the element with class of "carousel" to a slick.js carousel with autoplay
   $(".owl-carousel").owlCarousel({
     margin: 2,
