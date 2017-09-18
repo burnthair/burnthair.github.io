@@ -132,13 +132,14 @@ canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 .demo-container {position: relative; width: 100vw; height: 100vh; max-width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; background-color: white}
 .demo-buttons {display: none;}
 .demo-box {display: inline-block; -webkit-box-sizing: border-box; box-sizing: border-box; width: 27.5%; height: 60vh; z-index: 100; -webkit-box-shadow: 0.2vw 0.3vw 0.3vw rgba(34,34,34,0.4); box-shadow: 0.2vw 0.3vw 0.3vw rgba(34,34,34,0.4); background-color: #73819A; -webkit-transition: all 0.3s; transition: all 0.3s;}
-.burger-box {width: 100%; height: 90%; background-color: white; overflow: hidden;}
-.shift-element {top: 25%; width: 90%; height: auto; opacity: 0; -webkit-transition: all 1s; transition: all 1s;}
-.carousel-container {width: 100%; height: 90%; background-color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
+.demo-desc {height: 15%; width: 100%; box-sizing: border-box; padding: 12px; font-size: 1.25rem;}
+.carousel-container {width: 100%; height: 75%; background-color: white; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center;}
 .owl-carousel {align-items: center; width: 70%; height: auto;}
 .carousel-image {}
 .slick-arrow {border: none; margin: 0 4%; font-size: 1.5rem; color: white; background-color: #73819A; -webkit-transition: all 0.2s; transition: all 0.2s;}
 .slick-arrow:active, #burger-button:active, .demo-buttons button:active {-webkit-transform: translateY(0vh);transform: translateY(0vh); -webkit-box-shadow: 0vw 0vw 0vw #fff; box-shadow: 0vw 0vw 0vw #fff; -webkit-transition: all 0.2s; transition: all 0.2s;}
+/*.burger-box {width: 100%; height: 90%; background-color: white; overflow: hidden;}
+.shift-element {top: 25%; width: 90%; height: auto; opacity: 0; -webkit-transition: all 1s; transition: all 1s;}
 #shift-container {width: 80%; height: 100%; margin: 0 auto; -webkit-transition: all 2s ease; transition: all 2s ease;}
 #burger-shadow     {z-index:  5;}
 #burger-bun-bottom {z-index: 10;}
@@ -149,7 +150,7 @@ canvas {position: absolute; top: 10%; left: 5%; display: inline-block;}
 #burger-tomato-1   {z-index: 60;}
 #burger-tomato-2   {z-index: 70;}
 #burger-bun-top    {z-index: 80;}
-#burger-button {position: absolute; width: 90%; bottom: 5%; border: none; font-size: 0.75rem; margin: 0; padding: 4%; color: white; background-color: #73819A; right: 5%; -webkit-transition: all 0.2s; transition: all 0.2s;}
+#burger-button {position: absolute; width: 90%; bottom: 5%; border: none; font-size: 0.75rem; margin: 0; padding: 4%; color: white; background-color: #73819A; right: 5%; -webkit-transition: all 0.2s; transition: all 0.2s;}*/
 
 /* LINKS */
 .link-container {display: -webkit-box;display: -ms-flexbox;display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: normal; -ms-flex-flow: row nowrap; flex-flow: row nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; background-image: url("../img/mountains2.svg"); background-position: center; background-repeat: no-repeat; background-size: cover; height: 100vh;}
