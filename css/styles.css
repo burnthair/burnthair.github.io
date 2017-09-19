@@ -225,6 +225,7 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
 
 @media all and (max-width: 767px) {
   canvas {display: none;}
+  button {font-size: 0.7rem;}
   .name-container h1 {font-size: 4rem;}
   .side-nav-link {display: inline-block; font-size: 0.75rem; top: 0px; padding: 6px 8px;}
   .side-nav {width: 100vw; height: 40px;}
@@ -251,12 +252,13 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
 
 	.demo-container {-webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column nowrap; flex-flow: column nowrap; justify-content: flex-start;}
   .demo-buttons {display: block; margin-top: 18%; text-align: center;}
-  .demo-buttons button {background-color: #848484; border: none; padding: 6px; margin: 10% 12px;}
+  .demo-buttons button {background-color: #848484; border: none; padding: 6px; margin: 10% 0;}
   .demo-buttons button:active {}
   .demo-buttons button.demo-button-current {background-color: #73819A;}
   div.demo-box.demo-box-current {display: block;}
 	.demo-box {width: 90%; display: none;}
   .demo-box h3 {display: none;}
+  .demo-desc {font-size: 0.7rem;}
   .link-container {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
   a.link-logo {margin-top: 40px;}
 	.silhouette {width: 70%; top: 56%;}
