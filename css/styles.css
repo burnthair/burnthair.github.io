@@ -96,7 +96,7 @@ h3 {margin: 6px; letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-bloc
   font-size: 1rem;
   position: relative;
   top: 20px;
-  left: -80px;
+  left: -180px;
   margin-top: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -126,7 +126,7 @@ canvas {position: absolute; top: 10%; left: 15%; display: inline-block;}
 .about-box {display: block; position: relative; z-index: 20; left: 50%; width: 30%; min-height: 240px; background-color: #848484; -webkit-box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); box-shadow: 0.05vw 0.1vw 0.13vw rgba(34,34,34,0.4); -webkit-transition: all 0.3s; transition: all 0.3s;}
 .about-box p {display: block; margin: 4%;}
 .about-arrow {display: none; position: absolute; left: 92%; top: 6px; -webkit-transform: rotate(90deg); transform: rotate(90deg); -webkit-transition: all 0.5s; transition: all 0.5s;}
-#cartoon-me {position: fixed; top: -24%; left: 0; z-index: -1; width: 100vw;}
+#cartoon-me {position: absolute; top: 10%; left: 10%; width: 10vw;}
 
 /* DEMO */
 .demo-container {position: relative; width: 100vw; height: 100vh; max-width: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: distribute; justify-content: space-around; background-color: white}
@@ -263,6 +263,12 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
   a.link-logo {margin-top: 40px;}
 	.silhouette {width: 70%; top: 56%;}
 	#cartoon-me {display: none;}
+}
+
+@media all and (max-width: 1199px) {
+  .silhouette {width: 60%;}
+  .side-nav {width: 4vw;}
+  .side-nav-active {width: 20vw;}
 }
 
 @media all and (min-width: 1200px) {
