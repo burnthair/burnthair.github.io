@@ -223,6 +223,17 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
   100% {-webkit-transform: rotateX(0); transform: rotateX(0); opacity: 1;}
 }
 
+@media all and (max-width: 1199px) {
+  .silhouette {width: 60%;}
+  .side-nav {width: 4vw;}
+  .side-nav-active {width: 20vw;}
+  .about-box {width: 80%; left: 10%; min-height: 100px;}
+  .about-box p {display: none;}
+  .demo-container {flex-flow: wrap;}
+  .demo-box {width: 40%; height: 40%;}
+  .demo-desc {font-size: 0.9rem;}
+}
+
 @media all and (max-width: 767px) {
   canvas {display: none;}
   button {font-size: 0.7rem;}
@@ -263,17 +274,6 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
   a.link-logo {margin-top: 40px;}
 	.silhouette {width: 70%; top: 56%;}
 	#cartoon-me {display: none;}
-}
-
-@media all and (max-width: 1199px) {
-  .silhouette {width: 60%;}
-  .side-nav {width: 4vw;}
-  .side-nav-active {width: 20vw;}
-  .about-box {width: 80%; left: 10%; min-height: 100px;}
-  .about-box p {display: none;}
-  .demo-container {flex-flow: wrap;}
-  .demo-box {width: 40%; height: 40%;}
-  .demo-desc {font-size: 0.9rem;}
 }
 
 @media all and (min-width: 1200px) {
