@@ -96,7 +96,7 @@ h3 {margin: 6px; letter-spacing: 0.6vw; font-size: 0.75rem; display: inline-bloc
   font-size: 1rem;
   position: relative;
   top: 20px;
-  left: -180px;
+  left: -80px;
   margin-top: 20px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -222,7 +222,7 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
   0% {-webkit-transform: rotateX(80deg); transform: rotateX(80deg); opacity: 0;}
   100% {-webkit-transform: rotateX(0); transform: rotateX(0); opacity: 1;}
 }
-
+/*
 @media all and (max-width: 1199px) {
   .silhouette {width: 60%;}
   .side-nav {width: 4vw;}
@@ -232,7 +232,7 @@ a.link-logo img {width: 100%; -webkit-transition: all 0.2s; transition: all 0.2s
   .demo-container {flex-flow: wrap;}
   .demo-box {width: 40%; height: 40%;}
   .demo-desc {font-size: 0.9rem;}
-}
+}*/
 
 @media all and (max-width: 767px) {
   canvas {display: none;}
