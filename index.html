@@ -1,116 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>michael valier edwards - front-end web developer</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./img/favicon/manifest.json">
-  <link rel="mask-icon" href="./img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="./OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="./css/shift.css" type="text/css">
-  <link rel="stylesheet" href="./css/styles.css" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Forum|Londrina+Solid" rel="stylesheet">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
-
-    <!-- TEST COMMENT -->
 <body>
-  <div class="container">
-    <!-- SIDE NAVIGATION -->
-    <div class="KW_progressContainer"><div class="KW_progressBar"></div></div>
-    <div class="side-nav">
-      <img class="nav-arrow" src="./img/arrow.svg" alt="navigation arrow"/>
-      <ul>
-        <a class="side-nav-link" href="#top"><li>T O P</li></a>
-        <a class="side-nav-link" href="#about"><li>A B O U T</li></a>
-        <a class="side-nav-link" href="#demo"><li>D E M O</li></a>
-        <a class="side-nav-link" href="#links"><li>L I N K S</li></a>
+  <header>
+    <nav>
+      <ul class="hidden-links">
+        <li><a href="#">top</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">links</a></li>
+        <span class="initials">mve</span>
+      </ul>
+      <img class="hamburger-hand" src="./img/three_fingers.svg" alt="">
+      <img class="hamburger-close" src="./img/point_up.svg" alt="">
+      <img class="to-the-top" src="./img/point_up.svg" alt="">
+    </nav>
+  </header>
+  <section class="landing-container">
+    <img id="name-hands" src="./img/name_hands.svg" alt="">
+  </section>
+ <!-- <section class="skills-container">
+    <h2>SKILLS & UNDERSTANDINGS</h2>
+    <div class="skills-lists">
+      <ul class="left-list">
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+        <li>WordPress</li>
+        <li>AngularJS</li>
+        <li>Vue.JS</li>
+        <li>Node.JS</li>
+        <li>PostgreSQL</li>
+        <li>MAMP</li>
+      </ul>
+      <ul class="right-list">
+        <li>Inkscape</li>
+        <li>GIMP</li>
+        <li>Illustrator</li>
+        <li>Photoshop</li>
+        <li>SVG</li>
+        <li>Bash</li>
+        <li>Git/Github</li>
+        <li>vi/vim</li>
+        <li>SEO</li>
+        <li>Site Optimization</li>
       </ul>
     </div>
-    <!-- LANDING -->
-    <div class="landing" id="top">
-      <div class="name-container fade-in">
-        <h1 id="name-title">MICHAEL VALIER EDWARDS</h1>
-      </div>
-      <div class="job-title-container flip-in-hor-bottom">
-        <h3>front-end web developer</h3>
-      </div>
-      <img class="silhouette" id="silhouette1" src="./img/silhouette_fill1.svg" alt="">
-      <img class="silhouette" id="silhouette2" src="./img/silhouette_fill1.svg" alt="">
-      <img class="silhouette" id="silhouette3" src="./img/silhouette_fill1.svg" alt="">
-    </div>
-    <!-- ABOUT -->
-    <div class="about-container" id="about">
-      <div class="about-box" id="computer-skills">
-        <img class="about-arrow" src="./img/arrow.svg" alt="navigation arrow"/><h3>DEVELOPER</h3>
-        <p>From the start I have been obsessed. I love the powerful combination of visual aesthetic and functional logic the front-end languages provide.</p>
-      </div>
-      <div class="about-box" id="music-skills">
-        <img class="about-arrow" src="./img/arrow.svg" alt="navigation arrow"/><h3>SOUND MANIPULATOR</h3>
-        <p>For as long as I can remember, I have been fascinated with sound. Over the years I've developed skills in audio engineering and performing on instruments in the guitar, percussion, keys, and brass families.</p>
-      </div>
-      <div class="about-box" id="manual-skills">
-        <img class="about-arrow" src="./img/arrow.svg" alt="navigation arrow"/><h3>TINKERER</h3>
-        <p>So far I've managed to keep all of my fingers. I have taken classes in woodworking, and have dabbled in electronics.</p>
-      </div>
-    </div>
-    <!-- DEMO -->
-    <div class="demo-container" id="demo">
-      <div class="demo-buttons">
-        <button class="demo-show demo-button-current" id="stopwatch-show">STOPWATCH</button>
-        <button class="demo-show" id="hartland-show">HARTLAND ROBOTICS</button>
-        <button class="demo-show" id="signs-show">SIGNS</button>
-      </div>
-      <div id="stopwatch-demo-box" class="demo-box demo-box-current">
-        <h3>STOPWATCH</h3>
-        <p class="demo-desc">A fancy stopwatch built with HTML, CSS, and vanilla JavaScript.</p>
-        <iframe width="100%" height="75%" src="https://jsfiddle.net/burnthair/25k3zh6j/94/embedded/result/?bodyColor=fff&menuColor=848484&accentColor=222&fontColor=222" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-      </div>
-      <div id="hartland-robotics" class="demo-box">
-        <h3>HARTLAND ROBOTICS</h3>
-        <p class="demo-desc">A Wordpress site for <a href="http://hartlandrobotics.org">Hartland Robotics</a> that I helped create at Ann Arbor Give Camp 2017.</p>
-        <iframe width="100%" height="75%" src="http://hartlandrobotics.org" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
-      </div>
-      <div id="signs-demo-box" class="demo-box">
-        <h3>SIGNS</h3>
-        <p class="demo-desc">A selection of signage I created for Downtown Home & Garden.</p>
-        <div class="carousel-container">
-          <div class="owl-carousel">
-            <img class="carousel-image" src="./img/jampickle.png" alt="">
-            <img class="carousel-image" src="./img/mixnmatch.png" alt="">
-            <img class="carousel-image" src="./img/takebackgarden.png" alt="">
-            <img class="carousel-image" src="./img/clothes.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- LINKS -->
-    <div class="link-container" id="links">
-      <!-- <img class="parallax-layer" src="./img/mountainsprite1.png" alt="" style="width:978px; height:325px;"/>
-      <img class="parallax-layer" src="./img/mountainsprite2.png" alt="" style="width:987px; height:328px;"/>
-      <img class="parallax-layer" src="./img/mountainsprite3.png" alt="" style="width:1001px; height:333px;"/>
-      <img class="parallax-layer" src="./img/mountainsprite4.png" alt="" style="width:1031px; height:343px;"/>
-      <img class="parallax-layer" src="./img/mountainsprite5.png" alt="" style="width:1067px; height:355px;"/>
-      <img class="parallax-layer" src="./img/mountainsprite6.png" alt="" style="width:1120px; height:373px;"/>
-      <img class="parallax-layer" src="./img/mountainsprite7.png" alt="" style="width:1200px; height:400px;"/> -->
-      <a class="link-logo" href="https://github.com/burnthair" target="_blank"><img src="./img/githublogo.png" alt=""></a>
-      <a class="link-logo" href="https://soundcloud.com/mvedwards" target="_blank"><img src="./img/soundcloudlogo.png" alt=""></a>
-      <a class="link-logo" href="https://www.linkedin.com/in/michaelvedwards/" target="_blank"><img src="./img/linkedinlogo.png" alt=""></a>
-    </div>
-  </div>
-  <!-- SCRIPTS -->
-  <script type="text/javascript" src="https://use.edgefonts.net/quicksand.js"></script>
-  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-  <script src="./OwlCarousel2-2.2.1/dist/owl.carousel.min.js"></script>
-  <!-- <script type="text/javascript" src="js/shift.js"></script> -->
-  <!-- <script type="text/javascript" src="js/matter.js"></script> -->
-  <!-- <script type="text/javascript" src="js/sketch.js"></script> -->
-  <script type="text/javascript" src="js/script.js"></script>
+    <h3>please look at my <a href="#">resume</a></h3>
+  </section>
+  <section class="demo-container">
+    <h2>DEMONSTRATION</h2>
+    <h3><a href="http://jsfiddle.net/burnthair/25k3zh6j/94/" target="_blank">here</a> is a fancy stopwatch.</h3>
+    <p>i made it from HTML, CSS, and plain ol' vanilla JavaScript.</p>
+    <h3><a href="http://hartlandrobotics.org/" target="_blank">here</a> is a fine Wordpress site.</h3>
+    <p>i worked with a <a href="http://www.annarborgivecamp.org/" target="_blank">team of nice people</a> to help out Hartland Robotics with a Wordpress site.</p>
+    <h3><a href="#" target="_blank">here</a> are some signs.</h3>
+    <p>i was tasked with creating signs during my time at Downtown Home & Garden.</p>
+    <h3><a href="#" target="_blank">here</a> is a delicious hamburger.</h3>
+    <p>it is up for interpretation whether or not that is real or fake meat. made using <a href="#">shift.css</a> and my own assets.</p>
+  </section>
+  <section class="personal-container">
+    <h2>PERSONAL</h2>
+    <img id="head-shot" src="./img/mve01.png" alt="">
+    <p>i'm currently fascinated by <a href="https://p5js.org">p5.js</a>, <a href="http://brm.io/matter-js/">matter.js</a>, <a href="http://animejs.com">anime.js</a>, and <a href="https://threejs.org">three.js</a>.</p>
+    <p>i came in third place in my fantasy baseball league this year.</p>
+    <p>i've recently started <a href="https://burnthairblog.wordpress.com" target="_blank">blogging</a>.</p>
+    <p>i made all this <a href="https://soundcloud.com/mvedwards">music</a>.</p>
+  </section>
+  <footer>
+    <img id="head-outline" src="./img/mve_head_outline.svg" alt="">
+    <span>that's all i got</span>
+  </footer>-->
+  <script src="js/script.js"></script>
 </body>
-
 </html>
