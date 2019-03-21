@@ -39,11 +39,6 @@ body {
 	max-width: 100vw;
 }
 
-.wrapper {
-	overflow: hidden;
-	max-width: 100vw;
-}
-
 nav {
 	padding: 20px;
 	color: #fa9a8b;
@@ -73,37 +68,30 @@ nav li {
 	background-color: rgba(34,34,34,0.3);
 }
 
-.initials {
-	display: none;
-}
-
-.hamburger-hand {
-	position: relative;
-  left: 80%;
-  top: 0;
-  width: 22%;
+.hamburger-menu {
+	position: absolute;
+	right: 5vw;
+	top: 5vw;
+	display: inline-block;
 	transition: all 0.3s;
 }
 
-.hamburger-hand-active {
-	top: -100px;
+.hamburger-menu-active {
+	display: none;
 	transition: all 0.3s;
 }
 
 .hamburger-close {
 	position: absolute;
-	width: 10%;
-	top: 1rem;
-	right: -25%;
+  right: 5vw;
+	top: 5vw;
+	display: none;
 	transition: all 0.3s;
 }
 
 .hamburger-close-active {
-	left: 85%;
+	display: inline-block;
 	transition: all 0.3s;
-}
-
-ul.hidden-links {
 }
 
 .show-hidden-links {
@@ -111,13 +99,12 @@ ul.hidden-links {
 	top: 20px;
 }
 
-.to-the-top {
-	display: none;
+.back-to-the-top {
+	display: inline-block;
 	position: fixed;
-	width: 10%;
 	z-index: 9999;
-	top: 85%;
-	left: 85%;
+	right: 5vw;
+	bottom: 5vw;
 }
 
 h2, p {
@@ -133,7 +120,7 @@ a:link {
 }
 
 a:visited {
-	color: #222;
+	color: #aaa;
 }
 
 a:focus a:hover {
@@ -158,10 +145,20 @@ h3 {
 	background: #333
 }
 
-#name-hands {
-	width: 100%;
-	height: auto;
-	margin-top: 25%;
+svg {
+	display: block;
+	background-color: #fa9a8b;
+}
+
+.mask {
+	fill: #333;
+	fill-rule: evenodd;
+	stroke: none;
+	stroke-width: 1px;
+	stroke-linecap: butt;
+	stroke-linejoin: miter;
+	stroke-opacity: 1;
+	fill-opacity: 1;
 }
 
 .skills-container, .personal-container {
@@ -170,6 +167,8 @@ h3 {
 	box-sizing: border-box;
 	padding: 10px;
 	background-color: #fa9a8b;
+	position: relative;
+	z-index: -2;
 }
 
 .skills-container li, .personal-container p {
@@ -216,22 +215,19 @@ footer {
 }
 
 @media all and (min-width: 480px) {
-	.landing-container {text-align: center;}
-	#name-hands {width: 68%;}
 }
 
 @media all and (min-width: 768px) {
-	.landing-container {min-height: 888px;}
-	#head-shot {width: 40%; margin: 4rem auto;}
 }
 
 @media all and (min-width: 1024px) {
-	.landing-container {min-height: 1188px;}
-	#name-hands {margin-top: 18%;}
-	#head-shot {width: 40%; margin: 4rem auto;}
 }
 
-.mask {
-	width: 100vw;
-	height: auto;
+@keyframes rotating {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(-360deg);
+	}
 }
