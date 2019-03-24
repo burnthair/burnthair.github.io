@@ -145,9 +145,31 @@ h3 {
 	background: #333
 }
 
-svg {
+.my-name {
+  width: 64vw;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+[id^=path] {
+  fill: none;
+  fill-rule: evenodd;
+  stroke: url('#grad') #fa9a8b;
+  stroke-width: 0.1px;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-opacity: 1;
+  stroke-dasharray: 102;
+  stroke-dashoffset: 102;
+  animation: dash 2s 0.1s cubic-bezier(1,.11,0,.89) 1.5 alternate-reverse forwards;
+}
+
+.mask-container {
 	display: block;
+	margin:  0 auto;
 	background-color: #fa9a8b;
+	width: 100vw;
 }
 
 .mask {
@@ -230,4 +252,15 @@ footer {
 	to {
 		transform: rotate(-360deg);
 	}
+}
+
+@keyframes dash {
+  50% {
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dashoffset: -102;
+    stroke-width: 0.4px;
+  }
 }
