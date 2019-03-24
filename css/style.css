@@ -74,6 +74,7 @@ nav li {
 	top: 5vw;
 	display: inline-block;
 	transition: all 0.3s;
+	cursor: pointer;
 }
 
 .hamburger-menu-active {
@@ -87,6 +88,7 @@ nav li {
 	top: 5vw;
 	display: none;
 	transition: all 0.3s;
+	cursor: pointer;
 }
 
 .hamburger-close-active {
@@ -156,10 +158,10 @@ h3 {
   fill: none;
   fill-rule: evenodd;
   stroke: url('#grad') #fa9a8b;
-  stroke-width: 0.1px;
-  stroke-linecap: butt;
+  stroke-width: 3px;
+  stroke-linecap: round;
   stroke-linejoin: miter;
-  stroke-opacity: 1;
+  stroke-opacity: 0;
   stroke-dasharray: 102;
   stroke-dashoffset: 102;
   animation: dash 2s 0.1s cubic-bezier(1,.11,0,.89) 1.5 alternate-reverse forwards;
@@ -243,6 +245,9 @@ footer {
 }
 
 @media all and (min-width: 1024px) {
+	.my-name {
+		width: 30vw;
+	}
 }
 
 @keyframes rotating {
@@ -257,10 +262,10 @@ footer {
 @keyframes dash {
   50% {
     stroke-dashoffset: 0;
-    stroke-width: 1px;
+		stroke-width: 0.6px;
+		stroke-opacity: 1;
   }
   100% {
     stroke-dashoffset: -102;
-    stroke-width: 0.4px;
   }
 }
