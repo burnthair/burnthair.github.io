@@ -197,19 +197,32 @@ section {
 	background-color: #fa9a8b;
 }
 
-.skills-container {
-	display: flex;
-}
-
 .skills-container li {
 	color: #333;
 }
 
-.skills-lists {
-	display: flex;
-	justify-content: space-around;
-	margin: 60px 0;
-	box-sizing: border-box;
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 50%;
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-areas: "header header header header" "list1 list2 please1 please1" "list1 list2 please2 please2" "list1 list2 please3 please3";
+  padding: 1rem 3rem;
+}
+
+.skills-header { grid-area: header; }
+
+.left-list { grid-area: list1; }
+
+.right-list { grid-area: list2; }
+
+.please1 { grid-area: please1; }
+
+.please2 { grid-area: please2; }
+
+.please3 { grid-area: please3; }
+
+[class^=please] {
+	padding-top: 0;
 }
 
 footer {
