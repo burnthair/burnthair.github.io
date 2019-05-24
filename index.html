@@ -12,9 +12,9 @@
   <header id="top">
     <nav>
       <ul class="hidden-links">
-        <li><a href="#">top</a></li>
-        <li><a href="#">about</a></li>
-        <li><a href="#">links</a></li>
+        <li><a href="#top">top</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#personal">personal</a></li>
       </ul>
       <span class="hamburger-menu">&#9776;</span>
       <span class="hamburger-close">&#215;</span>
@@ -120,7 +120,7 @@
         id="path2245"
       />
   </svg> -->
-  <section class="skills-container">
+  <section class="skills-container" id="skills">
     <h2 class="skills-header">SKILLS & UNDERSTANDINGS</h2>
     <ul class="left-list">
       <li>HTML5</li>
@@ -150,14 +150,45 @@
     <h3 class="please2">i like to goof off in <a href="#">Codepen</a></h3>
     <h3 class="please3">see my solutions on <a href="#">Codewars</a></h3>
   </section>
-  <section class="personal-container">
+  <section class="personal-container" id="personal">
     <h2>PERSONAL</h2>
-    <p>i came in third place in my fantasy baseball league this year.</p>
+    <!-- can I pull in my team via an API call? -->
+    <p>i came in third place in my fantasy baseball league last year. it hasn't gone so well this year thus far.</p>
+    <!-- I need to add some photos here -->
     <p>i enjoy woodworking and have built a handful of useful things.</p>
     <p>i made all this <a href="https://soundcloud.com/mvedwards" target="_blank">music</a>.</p>
+  </section>
+  <section class="games-container" id="games">
+    <h2>GAMES</h2>
+    <div class="tetris-container">
+        <div class="game">
+            <h3>tetris</h3>
+            <canvas id="tetris" width="240" height="400"></canvas>
+            <button id="start-button" type="button">start</button>
+            <form id="difficulty" action="">
+                <span>
+                    <input type="radio" name="difficulty" value="easy" id="easy" checked>
+                    <label for="easy">easy</label>
+                </span>
+                <span>
+                    <input type="radio" name="difficulty" value="medium" id="medium">
+                    <label for="medium">medium</label>
+                </span>
+                <span>
+                    <input type="radio" name="difficulty" value="hard" id="hard">
+                    <label for="hard">hard</label>
+                </span>
+            </form>
+            <div class="info">
+                <span id="score"></span>
+                <span class="instructions">move: ↑↓←→ | rotate: wq</span>
+            </div>
+        </div>
+    </div>
   </section>
   <footer>
   </footer>
   <script src="js/script.js"></script>
+  <script src="js/tetris.js"></script>
 </body>
 </html>
