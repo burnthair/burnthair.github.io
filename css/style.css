@@ -6,6 +6,17 @@
     #fff
 */
 
+:root {
+	--green: #69fabc;
+	--orange: #ea5b33;
+	--purple: #5a5a99;
+	--red: #aa4c3c;
+	--aqua: #12fef1;
+	--blue: #acc2f4;
+	--pink: #fba19c;
+	--yellow: #fff1a4;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -46,6 +57,7 @@ nav {
 	max-width: 100vw;
 	height: auto;
 	overflow-x: hidden;
+	/* background-color: #4e6fab; */
 }
 
 ul, li {
@@ -153,7 +165,10 @@ h3 {
   width: 64vw;
   height: auto;
   margin: 0 auto;
-  transform: translateY;
+  position: absolute;
+  left:  50%;
+  top: 50%;
+  transform: translate(-50%, -40vh);
   display: block;
 }
 
@@ -232,32 +247,15 @@ section {
 	color: white;
 }
 
-:root {
-	--green: #69fabc;
-	--orange: #ea5b33;
-	--purple: #5a5a99;
-	--red: #aa4c3c;
-	--aqua: #12fef1;
-	--blue: #acc2f4;
-	--pink: #fba19c;
-	--yellow: #fff1a4;
-}
-
-body {
-	margin: 0;
-}
-
 .tetris-container {
 	width: 80vw;
 	min-height: 400px;
 	height: 100vh;
 	margin: 0 auto;
 	padding: 0;
-	background-color: #313139; /* ff3.6+ */ /* safari4+,chrome */ /* safari5.1+,chrome10+ */ /* opera 11.10+ */ /* ie10+ */
-	background: -webkit-gradient(linear, left top, right top, from(rgba(51,38,37,1)), color-stop(7%, rgba(51,38,37,1)), color-stop(86%, rgba(48,46,59,1)), to(rgba(48,46,59,1)));
-	background: linear-gradient(90deg, rgba(51,38,37,1) 0%, rgba(51,38,37,1) 7%, rgba(48,46,59,1) 86%, rgba(48,46,59,1) 100%); /* w3c */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#332625', endColorstr='#302E3B',GradientType=1 ); /* ie6-9 */
-	display: -webkit-box;display: -ms-flexbox;display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
 	-webkit-box-pack: center;
 			-ms-flex-pack: center;
 					justify-content: center;
@@ -377,6 +375,13 @@ footer {
 
 	.skills-lists {
 		width: 43%;
+	}
+}
+
+/* smartphones, touchscreens */
+@media (hover: none) and (pointer: coarse) {
+	.games-container {
+		display: none;
 	}
 }
 
