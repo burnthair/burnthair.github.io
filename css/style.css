@@ -223,7 +223,7 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas: "header header" "list1 list1" "list2 list2" "please1 please1" "please2 please2" "please3 please3";
+  grid-template-areas: "header header" "list1 list1" "list2 list2" "please1 please1" "please2 please2" "please3 please3" "bio bio";
 }
 
 .skills-header { grid-area: header; }
@@ -237,6 +237,8 @@ section {
 .please2 { grid-area: please2; }
 
 .please3 { grid-area: please3; }
+
+.bio { grid-area: bio; }
 
 [class^=please] {
 	padding-top: 0;
@@ -352,8 +354,13 @@ footer {
 	color: white;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 	align-items: center;
+	padding: 5vw 0;
+}
+
+footer img {
+	width: 20vw;
 }
 
 @media all and (min-width: 480px) {
